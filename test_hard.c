@@ -6,7 +6,7 @@
 /*   By: pniva <pniva@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:23:59 by pniva             #+#    #+#             */
-/*   Updated: 2021/11/23 13:46:43 by pniva            ###   ########.fr       */
+/*   Updated: 2021/11/23 15:21:14 by pniva            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 #include "../libft.h"
 #include <strings.h>
 #include <ctype.h>
-
-size_t strlcat(char *dst, const char *src, size_t siz);
-char *strnstr(const char *s, const char *find, size_t slen);
 
 static MunitResult	test_memset(const MunitParameter params[], void *data)
 {
