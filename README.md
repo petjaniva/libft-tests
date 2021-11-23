@@ -8,6 +8,8 @@ Tests use µnit C unit testing framework. https://nemequ.github.io/munit/#
 
 I don't think tests are particulary hard. And I will not promise that passing these tests means your library is perfect nor that failing these tests means your functions are wrong.
 
+If you're using macOS or some other OS which has strlcat and strncat functions built-in use macOS branch. 
+
 How-to:
 
 1. Clone or copy folder to your the folder of your libft. For example your libft is in ~/libft then tests should be in ~/libft/tests/
