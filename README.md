@@ -1,8 +1,11 @@
 # libft-tests
 
 Unit tests for 42-project libft. 
+
 Done in 11/2021 and in Hive Helsinki. 
+
 Tests use µnit C unit testing framework. https://nemequ.github.io/munit/# 
+
 I don't think tests are particulary hard. And I will not promise that passing these tests means your library is perfect nor that failing these tests means your functions are wrong.
 
 How-to:
