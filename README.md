@@ -16,4 +16,4 @@ How-to:
 2. Clone µnit to your tests-folder. If we continue our example the munit.c file should be in ~/libft/tests/munit/
 3. Run compile_tests.sh. 
 4. Now you should have separate .out files for easy, hard, lists and print tests. 
-5. Run tests one by one and hopefully get lots of green. Print tests don't use the test framework, but taking a look in test_print.c should tell you what kind of input you're looking for.
+5. Run tests one by one and hopefully get lots of green. Print tests don't use the test framework, but taking a look in test_print.c should tell you what kind of output you're looking for.
