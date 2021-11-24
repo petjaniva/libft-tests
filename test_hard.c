@@ -6,7 +6,7 @@
 /*   By: pniva <pniva@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:23:59 by pniva             #+#    #+#             */
-/*   Updated: 2021/11/23 15:21:14 by pniva            ###   ########.fr       */
+/*   Updated: 2021/11/24 13:03:43 by pniva            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -536,20 +536,6 @@ static MunitResult test_atoi_plus_neg(const MunitParameter params[], void *data)
 	return (MUNIT_OK);
 }
 
-static MunitResult test_atoi_null(const MunitParameter params[], void *data)
-{
-	(void)	params;
-	(void)	data;
-	char	*src = NULL;
-	int		og_ret;
-	int		new_ret;
-
-	og_ret = atoi(src);
-	new_ret = ft_atoi(src);
-	munit_assert_int(og_ret, ==, new_ret);
-	return (MUNIT_OK);
-}
-
 
 static MunitResult test_strnew(const MunitParameter params[], void *data)
 {
@@ -786,7 +772,6 @@ static MunitTest test_suite_tests[] =
 	{(char *) "/atoi/neg_plus", test_atoi_neg_plus, 0, 0, 0, 0},
 	{(char *) "/atoi/plus_spaces", test_atoi_plus_spaces, 0, 0, 0, 0},
 	{(char *) "/atoi/plus_neg", test_atoi_plus_neg, 0, 0, 0, 0},
-	{(char *) "/atoi/null", test_atoi_null, 0, 0, 0, 0},
 	{(char *) "/strnew", test_strnew, 0, 0, 0, 0},
 	{(char *) "/strdel", test_strdel, 0, 0, 0, 0},
 	{(char *) "/strclr", test_strclr, 0, 0, 0, 0},
