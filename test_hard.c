@@ -6,7 +6,7 @@
 /*   By: pniva <pniva@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:23:59 by pniva             #+#    #+#             */
-/*   Updated: 2021/11/24 13:03:43 by pniva            ###   ########.fr       */
+/*   Updated: 2021/11/29 16:01:25 by pniva            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,8 @@ static MunitResult test_bzero(const MunitParameter params[], void *data)
 	
 	og_bzero = malloc(sizeof(char) * 6);
 	new_bzero = malloc(sizeof(char) * 6);
-	bzero(og_bzero, 0);
-	ft_bzero(new_bzero, 0);
+	bzero(og_bzero, (0));
+	ft_bzero(new_bzero, (0));
 	munit_assert_string_equal(og_bzero, new_bzero);
 	return (MUNIT_OK);
 }
